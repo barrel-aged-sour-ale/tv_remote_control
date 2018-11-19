@@ -12,9 +12,11 @@
 		8911CE4C21A356620087991D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8911CE4A21A356620087991D /* Main.storyboard */; };
 		8911CE4E21A356630087991D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8911CE4D21A356630087991D /* Assets.xcassets */; };
 		8911CE5121A356630087991D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8911CE4F21A356630087991D /* LaunchScreen.storyboard */; };
+		C8264A234A1F0C78A373E0C8 /* Pods_TVRemoteControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A34C10D644D973551A3F4CCE /* Pods_TVRemoteControl.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		378B5C9D23F1F20C1339BCC1 /* Pods-TVRemoteControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVRemoteControl.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVRemoteControl/Pods-TVRemoteControl.release.xcconfig"; sourceTree = "<group>"; };
 		8911CE4321A356610087991D /* TVRemoteControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVRemoteControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8911CE4621A356620087991D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8911CE4821A356620087991D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		8911CE4D21A356630087991D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8911CE5021A356630087991D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8911CE5221A356630087991D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A263BBDF60C613ACD086B3D0 /* Pods-TVRemoteControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVRemoteControl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVRemoteControl/Pods-TVRemoteControl.debug.xcconfig"; sourceTree = "<group>"; };
+		A34C10D644D973551A3F4CCE /* Pods_TVRemoteControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVRemoteControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8264A234A1F0C78A373E0C8 /* Pods_TVRemoteControl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F5C750A2A648685808B89D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A34C10D644D973551A3F4CCE /* Pods_TVRemoteControl.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8911CE3A21A356610087991D = {
 			isa = PBXGroup;
 			children = (
 				8911CE4521A356610087991D /* TVRemoteControl */,
 				8911CE4421A356610087991D /* Products */,
+				DBE3053A36E1D64E3A30726B /* Pods */,
+				5F5C750A2A648685808B89D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = TVRemoteControl;
 			sourceTree = "<group>";
 		};
+		DBE3053A36E1D64E3A30726B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A263BBDF60C613ACD086B3D0 /* Pods-TVRemoteControl.debug.xcconfig */,
+				378B5C9D23F1F20C1339BCC1 /* Pods-TVRemoteControl.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,6 +95,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8911CE5521A356630087991D /* Build configuration list for PBXNativeTarget "TVRemoteControl" */;
 			buildPhases = (
+				DFE94D2E1702EF50307723B8 /* [CP] Check Pods Manifest.lock */,
 				8911CE3F21A356610087991D /* Sources */,
 				8911CE4021A356610087991D /* Frameworks */,
 				8911CE4121A356610087991D /* Resources */,
@@ -129,6 +154,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DFE94D2E1702EF50307723B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TVRemoteControl-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8911CE3F21A356610087991D /* Sources */ = {
@@ -213,7 +259,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -268,7 +314,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -280,6 +326,7 @@
 		};
 		8911CE5621A356630087991D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A263BBDF60C613ACD086B3D0 /* Pods-TVRemoteControl.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +344,7 @@
 		};
 		8911CE5721A356630087991D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 378B5C9D23F1F20C1339BCC1 /* Pods-TVRemoteControl.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
