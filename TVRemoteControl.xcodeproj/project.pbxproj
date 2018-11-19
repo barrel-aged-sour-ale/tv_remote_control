@@ -12,6 +12,7 @@
 		8911CE4C21A356620087991D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8911CE4A21A356620087991D /* Main.storyboard */; };
 		8911CE4E21A356630087991D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8911CE4D21A356630087991D /* Assets.xcassets */; };
 		8911CE5121A356630087991D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8911CE4F21A356630087991D /* LaunchScreen.storyboard */; };
+		89BD140A21A35D5100CE19A9 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BD140921A35D5100CE19A9 /* R.generated.swift */; };
 		C8264A234A1F0C78A373E0C8 /* Pods_TVRemoteControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A34C10D644D973551A3F4CCE /* Pods_TVRemoteControl.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 		8911CE4D21A356630087991D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8911CE5021A356630087991D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8911CE5221A356630087991D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89BD140921A35D5100CE19A9 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		A263BBDF60C613ACD086B3D0 /* Pods-TVRemoteControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVRemoteControl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVRemoteControl/Pods-TVRemoteControl.debug.xcconfig"; sourceTree = "<group>"; };
 		A34C10D644D973551A3F4CCE /* Pods_TVRemoteControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVRemoteControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -69,6 +71,7 @@
 		8911CE4521A356610087991D /* TVRemoteControl */ = {
 			isa = PBXGroup;
 			children = (
+				89BD140721A35CDA00CE19A9 /* Resources */,
 				8911CE4621A356620087991D /* AppDelegate.swift */,
 				8911CE4821A356620087991D /* ViewController.swift */,
 				8911CE4A21A356620087991D /* Main.storyboard */,
@@ -77,6 +80,14 @@
 				8911CE5221A356630087991D /* Info.plist */,
 			);
 			path = TVRemoteControl;
+			sourceTree = "<group>";
+		};
+		89BD140721A35CDA00CE19A9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				89BD140921A35D5100CE19A9 /* R.generated.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		DBE3053A36E1D64E3A30726B /* Pods */ = {
@@ -96,6 +107,8 @@
 			buildConfigurationList = 8911CE5521A356630087991D /* Build configuration list for PBXNativeTarget "TVRemoteControl" */;
 			buildPhases = (
 				DFE94D2E1702EF50307723B8 /* [CP] Check Pods Manifest.lock */,
+				89BD140821A35D0000CE19A9 /* [R.generated.swift] Run Script */,
+				89BD140521A35AF000CE19A9 /* [SwiftLint] Run Script */,
 				8911CE3F21A356610087991D /* Sources */,
 				8911CE4021A356610087991D /* Frameworks */,
 				8911CE4121A356610087991D /* Resources */,
@@ -175,6 +188,42 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVRemoteControl/Pods-TVRemoteControl-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		89BD140521A35AF000CE19A9 /* [SwiftLint] Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[SwiftLint] Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		89BD140821A35D0000CE19A9 /* [R.generated.swift] Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[R.generated.swift] Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/TVRemoteControl/Resources\"\n";
+		};
 		DFE94D2E1702EF50307723B8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -202,6 +251,7 @@
 			files = (
 				8911CE4921A356620087991D /* ViewController.swift in Sources */,
 				8911CE4721A356620087991D /* AppDelegate.swift in Sources */,
+				89BD140A21A35D5100CE19A9 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

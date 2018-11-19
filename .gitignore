@@ -28,5 +28,8 @@ xcuserdata/
 timeline.xctimeline
 playground.xcworkspace
 
-# CocoaPods
+## CocoaPods
 Pods/
+
+## R.generated.swift
+TVRemoteControl/Resources/R.generated.swift
