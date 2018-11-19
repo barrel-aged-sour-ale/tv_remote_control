@@ -99,6 +99,7 @@
 				8911CE3F21A356610087991D /* Sources */,
 				8911CE4021A356610087991D /* Frameworks */,
 				8911CE4121A356610087991D /* Resources */,
+				1C4EFCE31D8764BC70C7BBA4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -156,6 +157,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1C4EFCE31D8764BC70C7BBA4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TVRemoteControl/Pods-TVRemoteControl-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVRemoteControl/Pods-TVRemoteControl-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DFE94D2E1702EF50307723B8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
