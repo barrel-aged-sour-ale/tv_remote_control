@@ -67,5 +67,6 @@ nesting:
 
 excluded:
     - TVRemoteControl/Resources/R.generated.swift
+    - Carthage
 
 reporter: "xcode"
