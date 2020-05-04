@@ -8,7 +8,6 @@ protocol LANScannerDelegate: AnyObject {
 }
 
 class LANScanner: NSObject {
-
     weak var delegate: LANScannerDelegate?
 
     var isScanRunning = false
@@ -19,21 +18,21 @@ class LANScanner: NSObject {
     private let accessQueue = DispatchQueue(label: "IncreaseTVsCount")
 
     private lazy var lanScanner: MMLANScanner = {
-        return MMLANScanner(delegate: self)
+        MMLANScanner(delegate: self)
     }()
 
     func startScanForPhillipsTV() {
-        self.isScanRunning = true
+        isScanRunning = true
         lanScanner.start()
     }
 
     func stopScanning() {
-        self.isScanRunning = false
+        isScanRunning = false
         lanScanner.stop()
     }
 
     private func tryConnectedDevices() {
-        for index in 0..<connectedDevices.count {
+        for index in 0 ..< connectedDevices.count {
             tryHost(with: connectedDevices[index].ipAddress)
         }
     }
@@ -50,9 +49,9 @@ class LANScanner: NSObject {
                                                 from: self.connectedDevices.count)
             }
             switch result {
-            case .failure(let error):
+            case let .failure(error):
                 print("[API] Failure: error: \(error.reason)")
-            case .success(let response):
+            case let .success(response):
                 delegate.lanScanDidFindNewDevice(response)
                 print("[API] Success: response \(response)")
             }
@@ -69,18 +68,18 @@ class LANScanner: NSObject {
 }
 
 // MARK: - MMLANScannerDelegate
-extension LANScanner: MMLANScannerDelegate {
 
+extension LANScanner: MMLANScannerDelegate {
     func lanScanDidFindNewDevice(_ device: MMDevice!) {
-        if !self.connectedDevices.contains(device) {
-            self.connectedDevices.append(device)
+        if !connectedDevices.contains(device) {
+            connectedDevices.append(device)
         }
         print("[MMLANScannerDelegate] \(#function) \(device.ipAddress ?? "nil")")
     }
 
-    func lanScanDidFinishScanning(with status: MMLanScannerStatus) {
+    func lanScanDidFinishScanning(with _: MMLanScannerStatus) {
         print("[MMLANScannerDelegate] \(#function) SCAN finished, TryingHosts Started")
-        self.tryConnectedDevices()
+        tryConnectedDevices()
     }
 
     func lanScanDidFailedToScan() {
@@ -88,9 +87,7 @@ extension LANScanner: MMLANScannerDelegate {
             return
         }
         delegate.lanScanDidFailedToScan()
-        self.isScanRunning = false
+        isScanRunning = false
         print("[MMLANScannerDelegate] \(#function) SCAN failed")
     }
-
 }
-

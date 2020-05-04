@@ -1,19 +1,10 @@
-//
-//  ScannerTableViewController.swift
-//  TVRemoteControl
-//
-//  Created by Daian Aiziatov on 26/02/2019.
-//  Copyright © 2019 robot64. All rights reserved.
-//
-
 import UIKit
 
 class ScannerTableViewController: UITableViewController {
-
     private lazy var progressView: UIProgressView = {
         let frames = CGRect(x: 0,
                             y: (self.navigationController?.navigationBar.frame.height ?? 0) + 20,
-                            width: (self.navigationController?.navigationBar.frame.width ?? 0),
+                            width: self.navigationController?.navigationBar.frame.width ?? 0,
                             height: 20)
         let progressView = UIProgressView(frame: frames)
         progressView.translatesAutoresizingMaskIntoConstraints = false
@@ -23,14 +14,14 @@ class ScannerTableViewController: UITableViewController {
     private var connectedTVs = [SystemInfo]()
 
     private lazy var scanner: LANScanner = {
-        return LANScanner()
+        LANScanner()
     }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "MyCell")
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "MyCell")
         let start = UIBarButtonItem(barButtonSystemItem: .play, target: self, action: #selector(startScanning))
-        self.navigationItem.rightBarButtonItem = start
+        navigationItem.rightBarButtonItem = start
         scanner.delegate = self
     }
 
@@ -40,23 +31,24 @@ class ScannerTableViewController: UITableViewController {
         tableView.reloadData()
         scanner.startScanForPhillipsTV()
         let stop = UIBarButtonItem(barButtonSystemItem: .stop, target: self, action: #selector(stopScanning))
-        self.navigationItem.rightBarButtonItem = stop
-        self.navigationItem.titleView = progressView
+        navigationItem.rightBarButtonItem = stop
+        navigationItem.titleView = progressView
     }
 
     @objc
     func stopScanning() {
         scanner.stopScanning()
         let start = UIBarButtonItem(barButtonSystemItem: .play, target: self, action: #selector(startScanning))
-        self.navigationItem.rightBarButtonItem = start
+        navigationItem.rightBarButtonItem = start
     }
 
     // MARK: - Table view data source
-    override func numberOfSections(in tableView: UITableView) -> Int {
+
+    override func numberOfSections(in _: UITableView) -> Int {
         return 1
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {
         return connectedTVs.count
     }
 
@@ -65,12 +57,11 @@ class ScannerTableViewController: UITableViewController {
         cell.textLabel!.text = "\(connectedTVs[indexPath.row].ipAddress ?? "nil") - \(connectedTVs[indexPath.row].name)"
         return cell
     }
-
 }
 
 extension ScannerTableViewController: LANScannerDelegate {
     func lanScanDidFindNewDevice(_ device: SystemInfo) {
-        self.connectedTVs.append(device)
+        connectedTVs.append(device)
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
@@ -81,7 +72,7 @@ extension ScannerTableViewController: LANScannerDelegate {
         DispatchQueue.main.async {
             let start = UIBarButtonItem(barButtonSystemItem: .play, target: self, action: #selector(self.startScanning))
             self.navigationItem.rightBarButtonItem = start
-            self.navigationItem.titleView =  nil
+            self.navigationItem.titleView = nil
         }
     }
 
@@ -90,11 +81,10 @@ extension ScannerTableViewController: LANScannerDelegate {
         DispatchQueue.main.async {
             self.progressView.setProgress(Float(overallHosts) / Float(checkedHosts), animated: true)
         }
-
     }
-    
+
     func lanScanDidFailedToScan() {
         print("[LANScannerDelegate] \(#function) Fail")
-        self.navigationItem.titleView =  nil
+        navigationItem.titleView = nil
     }
 }

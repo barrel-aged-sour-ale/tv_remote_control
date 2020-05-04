@@ -9,11 +9,10 @@
 import Foundation
 
 enum DataResponseError: Error {
-    
     case noTVinNetwork
     case network
     case decoding
-    
+
     var reason: String {
         switch self {
         case .noTVinNetwork:

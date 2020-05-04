@@ -1,7 +1,6 @@
 import Foundation
 
 final class APIClient {
-
     var ipAddress: String
 
     private lazy var baseURL: URL = {
@@ -31,8 +30,8 @@ final class APIClient {
             guard let httpResponse = response as? HTTPURLResponse,
                 httpResponse.hasSuccessStatusCode,
                 let data = data else {
-                    completion(Result.failure(DataResponseError.network))
-                    return
+                completion(Result.failure(DataResponseError.network))
+                return
             }
 
             guard var systemInfo = try? JSONDecoder().decode(SystemInfo.self, from: data) else {
@@ -46,5 +45,4 @@ final class APIClient {
 
         task.resume()
     }
-
 }
