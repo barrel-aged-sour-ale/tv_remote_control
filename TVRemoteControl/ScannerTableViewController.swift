@@ -14,7 +14,7 @@ class ScannerTableViewController: UITableViewController {
     private var connectedTVs: [SystemInfo] = []
 
     private lazy var scanner: LANScanner = {
-        LANScanner(lanScanner: MMLANScanner(), apiClient: TrySystemInfoLoader())
+        LANScanner(lanScanner: MMLANScanner(), trySystemInfoLoader: TrySystemInfoLoader())
     }()
 
     override func viewDidLoad() {

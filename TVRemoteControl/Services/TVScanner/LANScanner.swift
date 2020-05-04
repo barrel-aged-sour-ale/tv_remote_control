@@ -10,33 +10,26 @@ protocol LANScannerDelegate: AnyObject {
 class LANScanner: NSObject {
     weak var delegate: LANScannerDelegate?
 
-    private var isScanRunning = false
-
     private var connectedDevices: [MMDevice] = []
     private var connectedTVs: [SystemInfo] = []
     private var checkedTVsCount = 0
 
     private let accessQueue = DispatchQueue(label: "IncreaseTVsCount")
 
-    private var lanScanner: MMLANScanner {
-        didSet {
-            lanScanner.delegate = self
-        }
-    }
-    private let apiClient: TrySystemInfoLoading
+    private var lanScanner: MMLANScanner
+    private let trySystemInfoLoader: TrySystemInfoLoading
 
-    init(lanScanner: MMLANScanner, apiClient: TrySystemInfoLoading) {
+    init(lanScanner: MMLANScanner, trySystemInfoLoader: TrySystemInfoLoading) {
         self.lanScanner = lanScanner
-        self.apiClient = apiClient
+        self.trySystemInfoLoader = trySystemInfoLoader
     }
 
     func startScanForPhillipsTV() {
-        isScanRunning = true
+        lanScanner.delegate = self
         lanScanner.start()
     }
 
     func stopScanning() {
-        isScanRunning = false
         lanScanner.stop()
     }
 
@@ -47,26 +40,23 @@ class LANScanner: NSObject {
     }
 
     private func tryHost(with ipAddress: String) {
-        apiClient.tryLoadSystemInfo(for: ipAddress) { result in
+        trySystemInfoLoader.tryLoadSystemInfo(for: ipAddress) { result in
             self.accessQueue.sync {
                 self.checkedTVsCount += 1
                 self.delegate?.lanScanProgressChecked(self.checkedTVsCount,
                                                       from: self.connectedDevices.count)
-            }
-            switch result {
-            case let .failure(error):
-                print("[API] Failure: error: \(error.reason)")
-            case let .success(response):
-                self.delegate?.lanScanDidFindNewDevice(response)
-                print("[API] Success: response \(response)")
-            }
-            if self.checkedTVsCount == self.connectedDevices.count {
-                self.accessQueue.sync {
-                    self.checkedTVsCount = 0
+                switch result {
+                case let .failure(error):
+                    print("[API] Failure: error: \(error.reason)")
+                case let .success(response):
+                    self.delegate?.lanScanDidFindNewDevice(response)
+                    print("[API] Success: response \(response)")
                 }
-                self.isScanRunning = false
-                self.delegate?.lanScanDidFinishScanning()
-                print("[API] Process is complited")
+                if self.checkedTVsCount == self.connectedDevices.count {
+                    self.checkedTVsCount = 0
+                    self.delegate?.lanScanDidFinishScanning()
+                    print("[API] Process is complited")
+                }
             }
         }
     }
@@ -89,7 +79,6 @@ extension LANScanner: MMLANScannerDelegate {
 
     func lanScanDidFailedToScan() {
         delegate?.lanScanDidFailedToScan()
-        isScanRunning = false
         print("[MMLANScannerDelegate] \(#function) SCAN failed")
     }
 }

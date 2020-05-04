@@ -16,6 +16,7 @@
 		2B1AC8D92220FFF3009BBBF1 /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AC8D22220FFF3009BBBF1 /* URLRequest.swift */; };
 		2B1AC8DB22210052009BBBF1 /* SystemInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AC8DA22210052009BBBF1 /* SystemInfo.swift */; };
 		2B1FA1582225EC2A0030F8F6 /* ScannerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1FA1572225EC2A0030F8F6 /* ScannerTableViewController.swift */; };
+		2B42DD4F245FD46E00AFA27C /* LANScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B42DD4E245FD46E00AFA27C /* LANScannerTests.swift */; };
 		2BBAEA8E245FB88A00CD26E0 /* MMLANScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBAEA74245FB88A00CD26E0 /* MMLANScanner.m */; };
 		2BBAEA8F245FB88A00CD26E0 /* MACOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBAEA79245FB88A00CD26E0 /* MACOperation.m */; };
 		2BBAEA90245FB88A00CD26E0 /* NetworkCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBAEA7A245FB88A00CD26E0 /* NetworkCalculator.m */; };
@@ -55,6 +56,7 @@
 		2B1FA1572225EC2A0030F8F6 /* ScannerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerTableViewController.swift; sourceTree = "<group>"; };
 		2B42DD41245FD38800AFA27C /* TVRemoteControlUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVRemoteControlUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B42DD45245FD38800AFA27C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B42DD4E245FD46E00AFA27C /* LANScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LANScannerTests.swift; sourceTree = "<group>"; };
 		2BBAEA74245FB88A00CD26E0 /* MMLANScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMLANScanner.m; sourceTree = "<group>"; };
 		2BBAEA75245FB88A00CD26E0 /* NetworkCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkCalculator.h; sourceTree = "<group>"; };
 		2BBAEA76245FB88A00CD26E0 /* MACOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACOperation.h; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				2B42DD45245FD38800AFA27C /* Info.plist */,
+				2B42DD4E245FD46E00AFA27C /* LANScannerTests.swift */,
 			);
 			path = TVRemoteControlUnitTests;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				TargetAttributes = {
 					2B42DD40245FD38800AFA27C = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 						TestTargetID = 8911CE4221A356610087991D;
 					};
 					8911CE4221A356610087991D = {
@@ -444,6 +448,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B42DD4F245FD46E00AFA27C /* LANScannerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +504,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WXMC8MD6TM;
 				INFOPLIST_FILE = TVRemoteControlUnitTests/Info.plist;
@@ -510,6 +516,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.daian.TVRemoteControlUnitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TVRemoteControl/Supporting Files/TVRemoteControl-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "TVRemoteControl-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TVRemoteControl.app/TVRemoteControl";
@@ -520,6 +529,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WXMC8MD6TM;
 				INFOPLIST_FILE = TVRemoteControlUnitTests/Info.plist;
@@ -531,6 +541,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.daian.TVRemoteControlUnitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TVRemoteControl/Supporting Files/TVRemoteControl-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "TVRemoteControl-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TVRemoteControl.app/TVRemoteControl";
@@ -573,6 +585,7 @@
 				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -635,6 +648,7 @@
 				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
