@@ -11,7 +11,7 @@ class ScannerTableViewController: UITableViewController {
         return progressView
     }()
 
-    private var connectedTVs = [SystemInfo]()
+    private var connectedTVs: [SystemInfo] = []
 
     private lazy var scanner: LANScanner = {
         LANScanner()
