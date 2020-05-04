@@ -66,7 +66,6 @@ nesting:
         warning: 2
 
 excluded:
-    - TVRemoteControl/Resources/R.generated.swift
-    - Carthage
+    - Pods
 
 reporter: "xcode"
