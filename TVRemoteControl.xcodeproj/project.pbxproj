@@ -8,14 +8,56 @@
 
 /* Begin PBXBuildFile section */
 		1922112C21AFC39F00C0A68C /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1922112B21AFC39F00C0A68C /* Rswift.framework */; };
+		2B1AC8D42220FFF3009BBBF1 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AC8CD2220FFF2009BBBF1 /* APIRequest.swift */; };
+		2B1AC8D52220FFF3009BBBF1 /* HTTPURLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AC8CE2220FFF2009BBBF1 /* HTTPURLResponse.swift */; };
+		2B1AC8D62220FFF3009BBBF1 /* TrySystemInfoLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AC8CF2220FFF3009BBBF1 /* TrySystemInfoLoader.swift */; };
+		2B1AC8D72220FFF3009BBBF1 /* DataResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AC8D02220FFF3009BBBF1 /* DataResponseError.swift */; };
+		2B1AC8D82220FFF3009BBBF1 /* LANScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AC8D12220FFF3009BBBF1 /* LANScanner.swift */; };
+		2B1AC8D92220FFF3009BBBF1 /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AC8D22220FFF3009BBBF1 /* URLRequest.swift */; };
+		2B1AC8DB22210052009BBBF1 /* SystemInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AC8DA22210052009BBBF1 /* SystemInfo.swift */; };
+		2B1FA1582225EC2A0030F8F6 /* ScannerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1FA1572225EC2A0030F8F6 /* ScannerTableViewController.swift */; };
+		2B42DD4F245FD46E00AFA27C /* LANScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B42DD4E245FD46E00AFA27C /* LANScannerTests.swift */; };
+		2BBAEA98245FC85B00CD26E0 /* TrySystemInfoLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBAEA97245FC85B00CD26E0 /* TrySystemInfoLoading.swift */; };
 		8911CE4721A356620087991D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8911CE4621A356620087991D /* AppDelegate.swift */; };
 		8911CE4E21A356630087991D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8911CE4D21A356630087991D /* Assets.xcassets */; };
 		8911CE5121A356630087991D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8911CE4F21A356630087991D /* LaunchScreen.storyboard */; };
 		89BD140A21A35D5100CE19A9 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BD140921A35D5100CE19A9 /* R.generated.swift */; };
+		89CEA39F24603B53001EDE13 /* MMLANScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CEA38524603B53001EDE13 /* MMLANScanner.m */; };
+		89CEA3A024603B53001EDE13 /* MACOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CEA38A24603B53001EDE13 /* MACOperation.m */; };
+		89CEA3A124603B53001EDE13 /* NetworkCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CEA38B24603B53001EDE13 /* NetworkCalculator.m */; };
+		89CEA3A224603B53001EDE13 /* LANProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CEA38D24603B53001EDE13 /* LANProperties.m */; };
+		89CEA3A324603B53001EDE13 /* PingOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CEA38E24603B53001EDE13 /* PingOperation.m */; };
+		89CEA3A424603B53001EDE13 /* MacFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CEA39124603B53001EDE13 /* MacFinder.m */; };
+		89CEA3A524603B53001EDE13 /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CEA39924603B53001EDE13 /* SimplePing.m */; };
+		89CEA3A624603B53001EDE13 /* MMDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CEA39B24603B53001EDE13 /* MMDevice.m */; };
+		89CEA3A724603B53001EDE13 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89CEA39E24603B53001EDE13 /* data.plist */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B42DD46245FD38800AFA27C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8911CE3B21A356610087991D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8911CE4221A356610087991D;
+			remoteInfo = TVRemoteControl;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1922112B21AFC39F00C0A68C /* Rswift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rswift.framework; path = Carthage/Build/iOS/Rswift.framework; sourceTree = "<group>"; };
+		2B1AC87E2220FCAA009BBBF1 /* TVRemoteControl-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TVRemoteControl-Bridging-Header.h"; sourceTree = "<group>"; };
+		2B1AC8CD2220FFF2009BBBF1 /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		2B1AC8CE2220FFF2009BBBF1 /* HTTPURLResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPURLResponse.swift; sourceTree = "<group>"; };
+		2B1AC8CF2220FFF3009BBBF1 /* TrySystemInfoLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrySystemInfoLoader.swift; sourceTree = "<group>"; };
+		2B1AC8D02220FFF3009BBBF1 /* DataResponseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataResponseError.swift; sourceTree = "<group>"; };
+		2B1AC8D12220FFF3009BBBF1 /* LANScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LANScanner.swift; sourceTree = "<group>"; };
+		2B1AC8D22220FFF3009BBBF1 /* URLRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
+		2B1AC8DA22210052009BBBF1 /* SystemInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemInfo.swift; sourceTree = "<group>"; };
+		2B1FA1572225EC2A0030F8F6 /* ScannerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerTableViewController.swift; sourceTree = "<group>"; };
+		2B42DD41245FD38800AFA27C /* TVRemoteControlUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVRemoteControlUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B42DD45245FD38800AFA27C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B42DD4E245FD46E00AFA27C /* LANScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LANScannerTests.swift; sourceTree = "<group>"; };
+		2BBAEA97245FC85B00CD26E0 /* TrySystemInfoLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrySystemInfoLoading.swift; sourceTree = "<group>"; };
 		8911CE4321A356610087991D /* TVRemoteControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVRemoteControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8911CE4621A356620087991D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8911CE4D21A356630087991D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -23,9 +65,36 @@
 		8911CE5221A356630087991D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89BD140921A35D5100CE19A9 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		89BD140C21A35E8A00CE19A9 /* TVRemoteControl.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TVRemoteControl.xcconfig; sourceTree = "<group>"; };
+		89CEA38524603B53001EDE13 /* MMLANScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMLANScanner.m; sourceTree = "<group>"; };
+		89CEA38624603B53001EDE13 /* NetworkCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkCalculator.h; sourceTree = "<group>"; };
+		89CEA38724603B53001EDE13 /* MACOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACOperation.h; sourceTree = "<group>"; };
+		89CEA38824603B53001EDE13 /* LANProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LANProperties.h; sourceTree = "<group>"; };
+		89CEA38924603B53001EDE13 /* PingOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PingOperation.h; sourceTree = "<group>"; };
+		89CEA38A24603B53001EDE13 /* MACOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MACOperation.m; sourceTree = "<group>"; };
+		89CEA38B24603B53001EDE13 /* NetworkCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkCalculator.m; sourceTree = "<group>"; };
+		89CEA38C24603B53001EDE13 /* MMLANScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMLANScanner.h; sourceTree = "<group>"; };
+		89CEA38D24603B53001EDE13 /* LANProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LANProperties.m; sourceTree = "<group>"; };
+		89CEA38E24603B53001EDE13 /* PingOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PingOperation.m; sourceTree = "<group>"; };
+		89CEA39124603B53001EDE13 /* MacFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacFinder.m; sourceTree = "<group>"; };
+		89CEA39324603B53001EDE13 /* route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = route.h; sourceTree = "<group>"; };
+		89CEA39424603B53001EDE13 /* if_ether.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_ether.h; sourceTree = "<group>"; };
+		89CEA39524603B53001EDE13 /* if_arp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_arp.h; sourceTree = "<group>"; };
+		89CEA39624603B53001EDE13 /* MacFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacFinder.h; sourceTree = "<group>"; };
+		89CEA39824603B53001EDE13 /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
+		89CEA39924603B53001EDE13 /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
+		89CEA39B24603B53001EDE13 /* MMDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDevice.m; sourceTree = "<group>"; };
+		89CEA39C24603B53001EDE13 /* MMDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDevice.h; sourceTree = "<group>"; };
+		89CEA39E24603B53001EDE13 /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2B42DD3E245FD38800AFA27C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8911CE4021A356610087991D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -45,10 +114,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2B1AC87F2220FF7F009BBBF1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2B1AC8802220FF90009BBBF1 /* TVScanner */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2B1AC8802220FF90009BBBF1 /* TVScanner */ = {
+			isa = PBXGroup;
+			children = (
+				2B1AC8DA22210052009BBBF1 /* SystemInfo.swift */,
+				2B1AC8CF2220FFF3009BBBF1 /* TrySystemInfoLoader.swift */,
+				2B1AC8D22220FFF3009BBBF1 /* URLRequest.swift */,
+				2B1AC8CD2220FFF2009BBBF1 /* APIRequest.swift */,
+				2B1AC8D02220FFF3009BBBF1 /* DataResponseError.swift */,
+				2B1AC8CE2220FFF2009BBBF1 /* HTTPURLResponse.swift */,
+				2B1AC8D12220FFF3009BBBF1 /* LANScanner.swift */,
+				2BBAEA97245FC85B00CD26E0 /* TrySystemInfoLoading.swift */,
+			);
+			path = TVScanner;
+			sourceTree = "<group>";
+		};
+		2B42DD42245FD38800AFA27C /* TVRemoteControlUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				2B42DD45245FD38800AFA27C /* Info.plist */,
+				2B42DD4E245FD46E00AFA27C /* LANScannerTests.swift */,
+			);
+			path = TVRemoteControlUnitTests;
+			sourceTree = "<group>";
+		};
 		8911CE3A21A356610087991D = {
 			isa = PBXGroup;
 			children = (
 				8911CE4521A356610087991D /* TVRemoteControl */,
+				2B42DD42245FD38800AFA27C /* TVRemoteControlUnitTests */,
 				8911CE4421A356610087991D /* Products */,
 				1922112A21AFC39F00C0A68C /* Frameworks */,
 			);
@@ -58,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				8911CE4321A356610087991D /* TVRemoteControl.app */,
+				2B42DD41245FD38800AFA27C /* TVRemoteControlUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,8 +168,11 @@
 		8911CE4521A356610087991D /* TVRemoteControl */ = {
 			isa = PBXGroup;
 			children = (
+				89CEA38224603B36001EDE13 /* ThirdParty */,
+				2B1AC87F2220FF7F009BBBF1 /* Services */,
 				89BD140721A35CDA00CE19A9 /* Resources */,
 				89BD140B21A35E3F00CE19A9 /* Supporting Files */,
+				2B1FA1572225EC2A0030F8F6 /* ScannerTableViewController.swift */,
 			);
 			path = TVRemoteControl;
 			sourceTree = "<group>";
@@ -83,6 +189,7 @@
 		89BD140B21A35E3F00CE19A9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2B1AC87E2220FCAA009BBBF1 /* TVRemoteControl-Bridging-Header.h */,
 				8911CE4621A356620087991D /* AppDelegate.swift */,
 				8911CE4F21A356630087991D /* LaunchScreen.storyboard */,
 				8911CE5221A356630087991D /* Info.plist */,
@@ -91,9 +198,118 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		89CEA38224603B36001EDE13 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				89CEA38324603B53001EDE13 /* MMLanScan */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		89CEA38324603B53001EDE13 /* MMLanScan */ = {
+			isa = PBXGroup;
+			children = (
+				89CEA38424603B53001EDE13 /* Misc */,
+				89CEA38F24603B53001EDE13 /* External Libs */,
+				89CEA39A24603B53001EDE13 /* Objects */,
+				89CEA39D24603B53001EDE13 /* Data */,
+			);
+			path = MMLanScan;
+			sourceTree = "<group>";
+		};
+		89CEA38424603B53001EDE13 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				89CEA38524603B53001EDE13 /* MMLANScanner.m */,
+				89CEA38624603B53001EDE13 /* NetworkCalculator.h */,
+				89CEA38724603B53001EDE13 /* MACOperation.h */,
+				89CEA38824603B53001EDE13 /* LANProperties.h */,
+				89CEA38924603B53001EDE13 /* PingOperation.h */,
+				89CEA38A24603B53001EDE13 /* MACOperation.m */,
+				89CEA38B24603B53001EDE13 /* NetworkCalculator.m */,
+				89CEA38C24603B53001EDE13 /* MMLANScanner.h */,
+				89CEA38D24603B53001EDE13 /* LANProperties.m */,
+				89CEA38E24603B53001EDE13 /* PingOperation.m */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		89CEA38F24603B53001EDE13 /* External Libs */ = {
+			isa = PBXGroup;
+			children = (
+				89CEA39024603B53001EDE13 /* MacFinder */,
+				89CEA39724603B53001EDE13 /* SimplePing */,
+			);
+			path = "External Libs";
+			sourceTree = "<group>";
+		};
+		89CEA39024603B53001EDE13 /* MacFinder */ = {
+			isa = PBXGroup;
+			children = (
+				89CEA39124603B53001EDE13 /* MacFinder.m */,
+				89CEA39224603B53001EDE13 /* Network Headers */,
+				89CEA39624603B53001EDE13 /* MacFinder.h */,
+			);
+			path = MacFinder;
+			sourceTree = "<group>";
+		};
+		89CEA39224603B53001EDE13 /* Network Headers */ = {
+			isa = PBXGroup;
+			children = (
+				89CEA39324603B53001EDE13 /* route.h */,
+				89CEA39424603B53001EDE13 /* if_ether.h */,
+				89CEA39524603B53001EDE13 /* if_arp.h */,
+			);
+			path = "Network Headers";
+			sourceTree = "<group>";
+		};
+		89CEA39724603B53001EDE13 /* SimplePing */ = {
+			isa = PBXGroup;
+			children = (
+				89CEA39824603B53001EDE13 /* SimplePing.h */,
+				89CEA39924603B53001EDE13 /* SimplePing.m */,
+			);
+			path = SimplePing;
+			sourceTree = "<group>";
+		};
+		89CEA39A24603B53001EDE13 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				89CEA39B24603B53001EDE13 /* MMDevice.m */,
+				89CEA39C24603B53001EDE13 /* MMDevice.h */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		89CEA39D24603B53001EDE13 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				89CEA39E24603B53001EDE13 /* data.plist */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2B42DD40245FD38800AFA27C /* TVRemoteControlUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B42DD4A245FD38800AFA27C /* Build configuration list for PBXNativeTarget "TVRemoteControlUnitTests" */;
+			buildPhases = (
+				2B42DD3D245FD38800AFA27C /* Sources */,
+				2B42DD3E245FD38800AFA27C /* Frameworks */,
+				2B42DD3F245FD38800AFA27C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B42DD47245FD38800AFA27C /* PBXTargetDependency */,
+			);
+			name = TVRemoteControlUnitTests;
+			productName = TVRemoteControlUnitTests;
+			productReference = 2B42DD41245FD38800AFA27C /* TVRemoteControlUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		8911CE4221A356610087991D /* TVRemoteControl */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8911CE5521A356630087991D /* Build configuration list for PBXNativeTarget "TVRemoteControl" */;
@@ -143,15 +359,24 @@
 			projectRoot = "";
 			targets = (
 				8911CE4221A356610087991D /* TVRemoteControl */,
+				2B42DD40245FD38800AFA27C /* TVRemoteControlUnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2B42DD3F245FD38800AFA27C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8911CE4121A356610087991D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89CEA3A724603B53001EDE13 /* data.plist in Resources */,
 				8911CE5121A356630087991D /* LaunchScreen.storyboard in Resources */,
 				8911CE4E21A356630087991D /* Assets.xcassets in Resources */,
 			);
@@ -212,16 +437,49 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2B42DD3D245FD38800AFA27C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B42DD4F245FD46E00AFA27C /* LANScannerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8911CE3F21A356610087991D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B1AC8D82220FFF3009BBBF1 /* LANScanner.swift in Sources */,
 				8911CE4721A356620087991D /* AppDelegate.swift in Sources */,
+				2B1AC8D62220FFF3009BBBF1 /* TrySystemInfoLoader.swift in Sources */,
+				89CEA3A524603B53001EDE13 /* SimplePing.m in Sources */,
 				89BD140A21A35D5100CE19A9 /* R.generated.swift in Sources */,
+				89CEA3A024603B53001EDE13 /* MACOperation.m in Sources */,
+				89CEA3A624603B53001EDE13 /* MMDevice.m in Sources */,
+				2B1AC8D52220FFF3009BBBF1 /* HTTPURLResponse.swift in Sources */,
+				2B1FA1582225EC2A0030F8F6 /* ScannerTableViewController.swift in Sources */,
+				2B1AC8DB22210052009BBBF1 /* SystemInfo.swift in Sources */,
+				2B1AC8D72220FFF3009BBBF1 /* DataResponseError.swift in Sources */,
+				89CEA3A324603B53001EDE13 /* PingOperation.m in Sources */,
+				89CEA39F24603B53001EDE13 /* MMLANScanner.m in Sources */,
+				89CEA3A224603B53001EDE13 /* LANProperties.m in Sources */,
+				89CEA3A124603B53001EDE13 /* NetworkCalculator.m in Sources */,
+				2B1AC8D42220FFF3009BBBF1 /* APIRequest.swift in Sources */,
+				2BBAEA98245FC85B00CD26E0 /* TrySystemInfoLoading.swift in Sources */,
+				2B1AC8D92220FFF3009BBBF1 /* URLRequest.swift in Sources */,
+				89CEA3A424603B53001EDE13 /* MacFinder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B42DD47245FD38800AFA27C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8911CE4221A356610087991D /* TVRemoteControl */;
+			targetProxy = 2B42DD46245FD38800AFA27C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8911CE4F21A356630087991D /* LaunchScreen.storyboard */ = {
@@ -294,6 +552,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -349,6 +608,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -370,7 +630,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "TVRemoteControl/Supporting Files/TVRemoteControl-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -392,14 +652,50 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "TVRemoteControl/Supporting Files/TVRemoteControl-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		89CEA38024602ED5001EDE13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = TVRemoteControlUnitTests;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+			};
+			name = Debug;
+		};
+		89CEA38124602ED5001EDE13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				PRODUCT_NAME = TVRemoteControlUnitTests;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2B42DD4A245FD38800AFA27C /* Build configuration list for PBXNativeTarget "TVRemoteControlUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89CEA38024602ED5001EDE13 /* Debug */,
+				89CEA38124602ED5001EDE13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8911CE3E21A356610087991D /* Build configuration list for PBXProject "TVRemoteControl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
