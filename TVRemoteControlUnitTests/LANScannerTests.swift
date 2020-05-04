@@ -6,11 +6,10 @@
 //  Copyright © 2020 robot64. All rights reserved.
 //
 
-import XCTest
 @testable import TVRemoteControl
+import XCTest
 
 class LANScannerTests: XCTestCase {
-
     private var lanScanner: LANScanner!
     private var mockTrySystemInfoLoader: MockTrySystemInfoLoader!
     private var mockMMLanScanner: MockMMLANScanner!
@@ -62,8 +61,8 @@ class LANScannerTests: XCTestCase {
             }
 
             guard self.mockLanScannerDelegate.isLanScanDidFinishScanningExecuted else {
-              XCTFail("Expected delegate to be called")
-              return
+                XCTFail("Expected delegate to be called")
+                return
             }
 
             XCTAssertEqual(self.mockTrySystemInfoLoader.calledCount, 2)
@@ -83,7 +82,6 @@ class LANScannerTests: XCTestCase {
 }
 
 class MockLanScannerDelegate: LANScannerDelegate {
-
     var asyncExpectation: XCTestExpectation?
 
     var foundedDevices: [SystemInfo] = []
@@ -94,8 +92,8 @@ class MockLanScannerDelegate: LANScannerDelegate {
     var isLanScanDidFinishScanningExecuted = false
     func lanScanDidFinishScanning() {
         guard let expectation = asyncExpectation else {
-          XCTFail("MockLanScannerDelegate was not setup correctly. Missing XCTExpectation reference")
-          return
+            XCTFail("MockLanScannerDelegate was not setup correctly. Missing XCTExpectation reference")
+            return
         }
 
         isLanScanDidFinishScanningExecuted = true
@@ -103,7 +101,7 @@ class MockLanScannerDelegate: LANScannerDelegate {
     }
 
     var overallHosts: Int!
-    func lanScanProgressChecked(_ checkedHosts: Int, from overallHosts: Int) {
+    func lanScanProgressChecked(_: Int, from overallHosts: Int) {
         self.overallHosts = overallHosts
     }
 
@@ -114,7 +112,7 @@ class MockLanScannerDelegate: LANScannerDelegate {
 }
 
 class MockTrySystemInfoLoader: TrySystemInfoLoading {
-    var calledCount = 0;
+    var calledCount = 0
     var calledIps: [String] = []
 
     func tryLoadSystemInfo(for ipAddress: String, completion: @escaping (Result<SystemInfo, DataResponseError>) -> Void) {
@@ -125,7 +123,6 @@ class MockTrySystemInfoLoader: TrySystemInfoLoading {
 }
 
 class MockMMLANScanner: MMLANScanner {
-
     var isStartExecuted = false
     override func start() {
         isStartExecuted = true

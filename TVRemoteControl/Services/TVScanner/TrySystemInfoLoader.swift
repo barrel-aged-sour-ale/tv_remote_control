@@ -1,7 +1,6 @@
 import Foundation
 
 struct TrySystemInfoLoader: TrySystemInfoLoading {
-
     private var session: URLSession {
         let sessionConfig = URLSessionConfiguration.default
         sessionConfig.timeoutIntervalForRequest = 10.0
