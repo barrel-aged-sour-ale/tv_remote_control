@@ -1,32 +1,22 @@
 import Foundation
 
-final class APIClient {
-    var ipAddress: String
+struct TrySystemInfoLoader: TrySystemInfoLoading {
 
-    private lazy var baseURL: URL = {
-        let URLString = "http://\(self.ipAddress):1925"
-        return URL(string: URLString)!
-    }()
-
-    private(set) lazy var session: URLSession = {
+    private var session: URLSession {
         let sessionConfig = URLSessionConfiguration.default
         sessionConfig.timeoutIntervalForRequest = 10.0
         sessionConfig.timeoutIntervalForResource = 20.0
         let session = URLSession(configuration: sessionConfig)
         return session
-    }()
-
-    init(ipAddress: String) {
-        self.ipAddress = ipAddress
     }
 
-    func fetchingSystemInfo(completion: @escaping (Result<SystemInfo, DataResponseError>) -> Void) {
-        let urlRequest = URLRequest(url: baseURL.appendingPathComponent(APIRequest.systemNamePath))
+    func tryLoadSystemInfo(for ipAddress: String, completion: @escaping (Result<SystemInfo, DataResponseError>) -> Void) {
+        let urlRequest = URLRequest(url: baseUrl(for: ipAddress)
+            .appendingPathComponent(APIRequest.systemNamePath))
         var encodedURLRequest = urlRequest.encode(with: nil)
         encodedURLRequest.setValue("application/json", forHTTPHeaderField: "Accept")
 
         let task = session.dataTask(with: encodedURLRequest) { data, response, _ in
-
             guard let httpResponse = response as? HTTPURLResponse,
                 httpResponse.hasSuccessStatusCode,
                 let data = data else {
@@ -39,10 +29,18 @@ final class APIClient {
                 return
             }
 
-            systemInfo.ipAddress = self.ipAddress
+            systemInfo.ipAddress = ipAddress
             completion(Result.success(systemInfo))
         }
 
         task.resume()
+    }
+
+    private func baseUrl(for ipAddress: String) -> URL {
+        let URLString = "http://\(ipAddress):1925"
+        guard let url = URL(string: URLString) else {
+            fatalError("URL can't be nil")
+        }
+        return url
     }
 }

@@ -10,7 +10,7 @@
 		1922112C21AFC39F00C0A68C /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1922112B21AFC39F00C0A68C /* Rswift.framework */; };
 		2B1AC8D42220FFF3009BBBF1 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AC8CD2220FFF2009BBBF1 /* APIRequest.swift */; };
 		2B1AC8D52220FFF3009BBBF1 /* HTTPURLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AC8CE2220FFF2009BBBF1 /* HTTPURLResponse.swift */; };
-		2B1AC8D62220FFF3009BBBF1 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AC8CF2220FFF3009BBBF1 /* APIClient.swift */; };
+		2B1AC8D62220FFF3009BBBF1 /* TrySystemInfoLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AC8CF2220FFF3009BBBF1 /* TrySystemInfoLoader.swift */; };
 		2B1AC8D72220FFF3009BBBF1 /* DataResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AC8D02220FFF3009BBBF1 /* DataResponseError.swift */; };
 		2B1AC8D82220FFF3009BBBF1 /* LANScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AC8D12220FFF3009BBBF1 /* LANScanner.swift */; };
 		2B1AC8D92220FFF3009BBBF1 /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AC8D22220FFF3009BBBF1 /* URLRequest.swift */; };
@@ -25,6 +25,7 @@
 		2BBAEA94245FB88A00CD26E0 /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBAEA88245FB88A00CD26E0 /* SimplePing.m */; };
 		2BBAEA95245FB88A00CD26E0 /* MMDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBAEA8A245FB88A00CD26E0 /* MMDevice.m */; };
 		2BBAEA96245FB88A00CD26E0 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BBAEA8D245FB88A00CD26E0 /* data.plist */; };
+		2BBAEA98245FC85B00CD26E0 /* TrySystemInfoLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBAEA97245FC85B00CD26E0 /* TrySystemInfoLoading.swift */; };
 		8911CE4721A356620087991D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8911CE4621A356620087991D /* AppDelegate.swift */; };
 		8911CE4E21A356630087991D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8911CE4D21A356630087991D /* Assets.xcassets */; };
 		8911CE5121A356630087991D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8911CE4F21A356630087991D /* LaunchScreen.storyboard */; };
@@ -36,7 +37,7 @@
 		2B1AC87E2220FCAA009BBBF1 /* TVRemoteControl-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TVRemoteControl-Bridging-Header.h"; sourceTree = "<group>"; };
 		2B1AC8CD2220FFF2009BBBF1 /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		2B1AC8CE2220FFF2009BBBF1 /* HTTPURLResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPURLResponse.swift; sourceTree = "<group>"; };
-		2B1AC8CF2220FFF3009BBBF1 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		2B1AC8CF2220FFF3009BBBF1 /* TrySystemInfoLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrySystemInfoLoader.swift; sourceTree = "<group>"; };
 		2B1AC8D02220FFF3009BBBF1 /* DataResponseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataResponseError.swift; sourceTree = "<group>"; };
 		2B1AC8D12220FFF3009BBBF1 /* LANScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LANScanner.swift; sourceTree = "<group>"; };
 		2B1AC8D22220FFF3009BBBF1 /* URLRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
@@ -62,6 +63,7 @@
 		2BBAEA8A245FB88A00CD26E0 /* MMDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDevice.m; sourceTree = "<group>"; };
 		2BBAEA8B245FB88A00CD26E0 /* MMDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDevice.h; sourceTree = "<group>"; };
 		2BBAEA8D245FB88A00CD26E0 /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
+		2BBAEA97245FC85B00CD26E0 /* TrySystemInfoLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrySystemInfoLoading.swift; sourceTree = "<group>"; };
 		8911CE4321A356610087991D /* TVRemoteControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVRemoteControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8911CE4621A356620087991D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8911CE4D21A356630087991D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,12 +105,13 @@
 			isa = PBXGroup;
 			children = (
 				2B1AC8DA22210052009BBBF1 /* SystemInfo.swift */,
-				2B1AC8CF2220FFF3009BBBF1 /* APIClient.swift */,
+				2B1AC8CF2220FFF3009BBBF1 /* TrySystemInfoLoader.swift */,
 				2B1AC8D22220FFF3009BBBF1 /* URLRequest.swift */,
 				2B1AC8CD2220FFF2009BBBF1 /* APIRequest.swift */,
 				2B1AC8D02220FFF3009BBBF1 /* DataResponseError.swift */,
 				2B1AC8CE2220FFF2009BBBF1 /* HTTPURLResponse.swift */,
 				2B1AC8D12220FFF3009BBBF1 /* LANScanner.swift */,
+				2BBAEA97245FC85B00CD26E0 /* TrySystemInfoLoading.swift */,
 			);
 			path = TVScanner;
 			sourceTree = "<group>";
@@ -386,7 +389,7 @@
 				2BBAEA95245FB88A00CD26E0 /* MMDevice.m in Sources */,
 				8911CE4721A356620087991D /* AppDelegate.swift in Sources */,
 				2BBAEA92245FB88A00CD26E0 /* PingOperation.m in Sources */,
-				2B1AC8D62220FFF3009BBBF1 /* APIClient.swift in Sources */,
+				2B1AC8D62220FFF3009BBBF1 /* TrySystemInfoLoader.swift in Sources */,
 				2BBAEA8F245FB88A00CD26E0 /* MACOperation.m in Sources */,
 				89BD140A21A35D5100CE19A9 /* R.generated.swift in Sources */,
 				2B1AC8D52220FFF3009BBBF1 /* HTTPURLResponse.swift in Sources */,
@@ -398,6 +401,7 @@
 				2BBAEA94245FB88A00CD26E0 /* SimplePing.m in Sources */,
 				2BBAEA90245FB88A00CD26E0 /* NetworkCalculator.m in Sources */,
 				2BBAEA91245FB88A00CD26E0 /* LANProperties.m in Sources */,
+				2BBAEA98245FC85B00CD26E0 /* TrySystemInfoLoading.swift in Sources */,
 				2B1AC8D92220FFF3009BBBF1 /* URLRequest.swift in Sources */,
 				2BBAEA93245FB88A00CD26E0 /* MacFinder.m in Sources */,
 			);
