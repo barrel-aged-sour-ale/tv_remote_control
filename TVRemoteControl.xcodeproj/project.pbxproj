@@ -17,20 +17,20 @@
 		2B1AC8DB22210052009BBBF1 /* SystemInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AC8DA22210052009BBBF1 /* SystemInfo.swift */; };
 		2B1FA1582225EC2A0030F8F6 /* ScannerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1FA1572225EC2A0030F8F6 /* ScannerTableViewController.swift */; };
 		2B42DD4F245FD46E00AFA27C /* LANScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B42DD4E245FD46E00AFA27C /* LANScannerTests.swift */; };
-		2BBAEA8E245FB88A00CD26E0 /* MMLANScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBAEA74245FB88A00CD26E0 /* MMLANScanner.m */; };
-		2BBAEA8F245FB88A00CD26E0 /* MACOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBAEA79245FB88A00CD26E0 /* MACOperation.m */; };
-		2BBAEA90245FB88A00CD26E0 /* NetworkCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBAEA7A245FB88A00CD26E0 /* NetworkCalculator.m */; };
-		2BBAEA91245FB88A00CD26E0 /* LANProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBAEA7C245FB88A00CD26E0 /* LANProperties.m */; };
-		2BBAEA92245FB88A00CD26E0 /* PingOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBAEA7D245FB88A00CD26E0 /* PingOperation.m */; };
-		2BBAEA93245FB88A00CD26E0 /* MacFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBAEA80245FB88A00CD26E0 /* MacFinder.m */; };
-		2BBAEA94245FB88A00CD26E0 /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBAEA88245FB88A00CD26E0 /* SimplePing.m */; };
-		2BBAEA95245FB88A00CD26E0 /* MMDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBAEA8A245FB88A00CD26E0 /* MMDevice.m */; };
-		2BBAEA96245FB88A00CD26E0 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BBAEA8D245FB88A00CD26E0 /* data.plist */; };
 		2BBAEA98245FC85B00CD26E0 /* TrySystemInfoLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBAEA97245FC85B00CD26E0 /* TrySystemInfoLoading.swift */; };
 		8911CE4721A356620087991D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8911CE4621A356620087991D /* AppDelegate.swift */; };
 		8911CE4E21A356630087991D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8911CE4D21A356630087991D /* Assets.xcassets */; };
 		8911CE5121A356630087991D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8911CE4F21A356630087991D /* LaunchScreen.storyboard */; };
 		89BD140A21A35D5100CE19A9 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BD140921A35D5100CE19A9 /* R.generated.swift */; };
+		89CEA39F24603B53001EDE13 /* MMLANScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CEA38524603B53001EDE13 /* MMLANScanner.m */; };
+		89CEA3A024603B53001EDE13 /* MACOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CEA38A24603B53001EDE13 /* MACOperation.m */; };
+		89CEA3A124603B53001EDE13 /* NetworkCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CEA38B24603B53001EDE13 /* NetworkCalculator.m */; };
+		89CEA3A224603B53001EDE13 /* LANProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CEA38D24603B53001EDE13 /* LANProperties.m */; };
+		89CEA3A324603B53001EDE13 /* PingOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CEA38E24603B53001EDE13 /* PingOperation.m */; };
+		89CEA3A424603B53001EDE13 /* MacFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CEA39124603B53001EDE13 /* MacFinder.m */; };
+		89CEA3A524603B53001EDE13 /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CEA39924603B53001EDE13 /* SimplePing.m */; };
+		89CEA3A624603B53001EDE13 /* MMDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CEA39B24603B53001EDE13 /* MMDevice.m */; };
+		89CEA3A724603B53001EDE13 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89CEA39E24603B53001EDE13 /* data.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,26 +57,6 @@
 		2B42DD41245FD38800AFA27C /* TVRemoteControlUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVRemoteControlUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B42DD45245FD38800AFA27C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B42DD4E245FD46E00AFA27C /* LANScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LANScannerTests.swift; sourceTree = "<group>"; };
-		2BBAEA74245FB88A00CD26E0 /* MMLANScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMLANScanner.m; sourceTree = "<group>"; };
-		2BBAEA75245FB88A00CD26E0 /* NetworkCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkCalculator.h; sourceTree = "<group>"; };
-		2BBAEA76245FB88A00CD26E0 /* MACOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACOperation.h; sourceTree = "<group>"; };
-		2BBAEA77245FB88A00CD26E0 /* LANProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LANProperties.h; sourceTree = "<group>"; };
-		2BBAEA78245FB88A00CD26E0 /* PingOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PingOperation.h; sourceTree = "<group>"; };
-		2BBAEA79245FB88A00CD26E0 /* MACOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MACOperation.m; sourceTree = "<group>"; };
-		2BBAEA7A245FB88A00CD26E0 /* NetworkCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkCalculator.m; sourceTree = "<group>"; };
-		2BBAEA7B245FB88A00CD26E0 /* MMLANScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMLANScanner.h; sourceTree = "<group>"; };
-		2BBAEA7C245FB88A00CD26E0 /* LANProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LANProperties.m; sourceTree = "<group>"; };
-		2BBAEA7D245FB88A00CD26E0 /* PingOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PingOperation.m; sourceTree = "<group>"; };
-		2BBAEA80245FB88A00CD26E0 /* MacFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacFinder.m; sourceTree = "<group>"; };
-		2BBAEA82245FB88A00CD26E0 /* route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = route.h; sourceTree = "<group>"; };
-		2BBAEA83245FB88A00CD26E0 /* if_ether.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_ether.h; sourceTree = "<group>"; };
-		2BBAEA84245FB88A00CD26E0 /* if_arp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_arp.h; sourceTree = "<group>"; };
-		2BBAEA85245FB88A00CD26E0 /* MacFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacFinder.h; sourceTree = "<group>"; };
-		2BBAEA87245FB88A00CD26E0 /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
-		2BBAEA88245FB88A00CD26E0 /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
-		2BBAEA8A245FB88A00CD26E0 /* MMDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDevice.m; sourceTree = "<group>"; };
-		2BBAEA8B245FB88A00CD26E0 /* MMDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDevice.h; sourceTree = "<group>"; };
-		2BBAEA8D245FB88A00CD26E0 /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
 		2BBAEA97245FC85B00CD26E0 /* TrySystemInfoLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrySystemInfoLoading.swift; sourceTree = "<group>"; };
 		8911CE4321A356610087991D /* TVRemoteControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVRemoteControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8911CE4621A356620087991D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +65,26 @@
 		8911CE5221A356630087991D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89BD140921A35D5100CE19A9 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		89BD140C21A35E8A00CE19A9 /* TVRemoteControl.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TVRemoteControl.xcconfig; sourceTree = "<group>"; };
+		89CEA38524603B53001EDE13 /* MMLANScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMLANScanner.m; sourceTree = "<group>"; };
+		89CEA38624603B53001EDE13 /* NetworkCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkCalculator.h; sourceTree = "<group>"; };
+		89CEA38724603B53001EDE13 /* MACOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACOperation.h; sourceTree = "<group>"; };
+		89CEA38824603B53001EDE13 /* LANProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LANProperties.h; sourceTree = "<group>"; };
+		89CEA38924603B53001EDE13 /* PingOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PingOperation.h; sourceTree = "<group>"; };
+		89CEA38A24603B53001EDE13 /* MACOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MACOperation.m; sourceTree = "<group>"; };
+		89CEA38B24603B53001EDE13 /* NetworkCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkCalculator.m; sourceTree = "<group>"; };
+		89CEA38C24603B53001EDE13 /* MMLANScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMLANScanner.h; sourceTree = "<group>"; };
+		89CEA38D24603B53001EDE13 /* LANProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LANProperties.m; sourceTree = "<group>"; };
+		89CEA38E24603B53001EDE13 /* PingOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PingOperation.m; sourceTree = "<group>"; };
+		89CEA39124603B53001EDE13 /* MacFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacFinder.m; sourceTree = "<group>"; };
+		89CEA39324603B53001EDE13 /* route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = route.h; sourceTree = "<group>"; };
+		89CEA39424603B53001EDE13 /* if_ether.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_ether.h; sourceTree = "<group>"; };
+		89CEA39524603B53001EDE13 /* if_arp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_arp.h; sourceTree = "<group>"; };
+		89CEA39624603B53001EDE13 /* MacFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacFinder.h; sourceTree = "<group>"; };
+		89CEA39824603B53001EDE13 /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
+		89CEA39924603B53001EDE13 /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
+		89CEA39B24603B53001EDE13 /* MMDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDevice.m; sourceTree = "<group>"; };
+		89CEA39C24603B53001EDE13 /* MMDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDevice.h; sourceTree = "<group>"; };
+		89CEA39E24603B53001EDE13 /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,98 +146,6 @@
 			path = TVRemoteControlUnitTests;
 			sourceTree = "<group>";
 		};
-		2BBAEA71245FB82600CD26E0 /* Third-Party */ = {
-			isa = PBXGroup;
-			children = (
-				2BBAEA72245FB88A00CD26E0 /* MMLanScan */,
-			);
-			name = "Third-Party";
-			sourceTree = "<group>";
-		};
-		2BBAEA72245FB88A00CD26E0 /* MMLanScan */ = {
-			isa = PBXGroup;
-			children = (
-				2BBAEA73245FB88A00CD26E0 /* Misc */,
-				2BBAEA7E245FB88A00CD26E0 /* External Libs */,
-				2BBAEA89245FB88A00CD26E0 /* Objects */,
-				2BBAEA8C245FB88A00CD26E0 /* Data */,
-			);
-			name = MMLanScan;
-			path = "../../../../Downloads/MMLanScan-master/MMLanScan";
-			sourceTree = "<group>";
-		};
-		2BBAEA73245FB88A00CD26E0 /* Misc */ = {
-			isa = PBXGroup;
-			children = (
-				2BBAEA74245FB88A00CD26E0 /* MMLANScanner.m */,
-				2BBAEA75245FB88A00CD26E0 /* NetworkCalculator.h */,
-				2BBAEA76245FB88A00CD26E0 /* MACOperation.h */,
-				2BBAEA77245FB88A00CD26E0 /* LANProperties.h */,
-				2BBAEA78245FB88A00CD26E0 /* PingOperation.h */,
-				2BBAEA79245FB88A00CD26E0 /* MACOperation.m */,
-				2BBAEA7A245FB88A00CD26E0 /* NetworkCalculator.m */,
-				2BBAEA7B245FB88A00CD26E0 /* MMLANScanner.h */,
-				2BBAEA7C245FB88A00CD26E0 /* LANProperties.m */,
-				2BBAEA7D245FB88A00CD26E0 /* PingOperation.m */,
-			);
-			path = Misc;
-			sourceTree = "<group>";
-		};
-		2BBAEA7E245FB88A00CD26E0 /* External Libs */ = {
-			isa = PBXGroup;
-			children = (
-				2BBAEA7F245FB88A00CD26E0 /* MacFinder */,
-				2BBAEA86245FB88A00CD26E0 /* SimplePing */,
-			);
-			path = "External Libs";
-			sourceTree = "<group>";
-		};
-		2BBAEA7F245FB88A00CD26E0 /* MacFinder */ = {
-			isa = PBXGroup;
-			children = (
-				2BBAEA80245FB88A00CD26E0 /* MacFinder.m */,
-				2BBAEA81245FB88A00CD26E0 /* Network Headers */,
-				2BBAEA85245FB88A00CD26E0 /* MacFinder.h */,
-			);
-			path = MacFinder;
-			sourceTree = "<group>";
-		};
-		2BBAEA81245FB88A00CD26E0 /* Network Headers */ = {
-			isa = PBXGroup;
-			children = (
-				2BBAEA82245FB88A00CD26E0 /* route.h */,
-				2BBAEA83245FB88A00CD26E0 /* if_ether.h */,
-				2BBAEA84245FB88A00CD26E0 /* if_arp.h */,
-			);
-			path = "Network Headers";
-			sourceTree = "<group>";
-		};
-		2BBAEA86245FB88A00CD26E0 /* SimplePing */ = {
-			isa = PBXGroup;
-			children = (
-				2BBAEA87245FB88A00CD26E0 /* SimplePing.h */,
-				2BBAEA88245FB88A00CD26E0 /* SimplePing.m */,
-			);
-			path = SimplePing;
-			sourceTree = "<group>";
-		};
-		2BBAEA89245FB88A00CD26E0 /* Objects */ = {
-			isa = PBXGroup;
-			children = (
-				2BBAEA8A245FB88A00CD26E0 /* MMDevice.m */,
-				2BBAEA8B245FB88A00CD26E0 /* MMDevice.h */,
-			);
-			path = Objects;
-			sourceTree = "<group>";
-		};
-		2BBAEA8C245FB88A00CD26E0 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				2BBAEA8D245FB88A00CD26E0 /* data.plist */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
 		8911CE3A21A356610087991D = {
 			isa = PBXGroup;
 			children = (
@@ -260,7 +168,7 @@
 		8911CE4521A356610087991D /* TVRemoteControl */ = {
 			isa = PBXGroup;
 			children = (
-				2BBAEA71245FB82600CD26E0 /* Third-Party */,
+				89CEA38224603B36001EDE13 /* ThirdParty */,
 				2B1AC87F2220FF7F009BBBF1 /* Services */,
 				89BD140721A35CDA00CE19A9 /* Resources */,
 				89BD140B21A35E3F00CE19A9 /* Supporting Files */,
@@ -288,6 +196,97 @@
 				89BD140C21A35E8A00CE19A9 /* TVRemoteControl.xcconfig */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		89CEA38224603B36001EDE13 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				89CEA38324603B53001EDE13 /* MMLanScan */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		89CEA38324603B53001EDE13 /* MMLanScan */ = {
+			isa = PBXGroup;
+			children = (
+				89CEA38424603B53001EDE13 /* Misc */,
+				89CEA38F24603B53001EDE13 /* External Libs */,
+				89CEA39A24603B53001EDE13 /* Objects */,
+				89CEA39D24603B53001EDE13 /* Data */,
+			);
+			path = MMLanScan;
+			sourceTree = "<group>";
+		};
+		89CEA38424603B53001EDE13 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				89CEA38524603B53001EDE13 /* MMLANScanner.m */,
+				89CEA38624603B53001EDE13 /* NetworkCalculator.h */,
+				89CEA38724603B53001EDE13 /* MACOperation.h */,
+				89CEA38824603B53001EDE13 /* LANProperties.h */,
+				89CEA38924603B53001EDE13 /* PingOperation.h */,
+				89CEA38A24603B53001EDE13 /* MACOperation.m */,
+				89CEA38B24603B53001EDE13 /* NetworkCalculator.m */,
+				89CEA38C24603B53001EDE13 /* MMLANScanner.h */,
+				89CEA38D24603B53001EDE13 /* LANProperties.m */,
+				89CEA38E24603B53001EDE13 /* PingOperation.m */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		89CEA38F24603B53001EDE13 /* External Libs */ = {
+			isa = PBXGroup;
+			children = (
+				89CEA39024603B53001EDE13 /* MacFinder */,
+				89CEA39724603B53001EDE13 /* SimplePing */,
+			);
+			path = "External Libs";
+			sourceTree = "<group>";
+		};
+		89CEA39024603B53001EDE13 /* MacFinder */ = {
+			isa = PBXGroup;
+			children = (
+				89CEA39124603B53001EDE13 /* MacFinder.m */,
+				89CEA39224603B53001EDE13 /* Network Headers */,
+				89CEA39624603B53001EDE13 /* MacFinder.h */,
+			);
+			path = MacFinder;
+			sourceTree = "<group>";
+		};
+		89CEA39224603B53001EDE13 /* Network Headers */ = {
+			isa = PBXGroup;
+			children = (
+				89CEA39324603B53001EDE13 /* route.h */,
+				89CEA39424603B53001EDE13 /* if_ether.h */,
+				89CEA39524603B53001EDE13 /* if_arp.h */,
+			);
+			path = "Network Headers";
+			sourceTree = "<group>";
+		};
+		89CEA39724603B53001EDE13 /* SimplePing */ = {
+			isa = PBXGroup;
+			children = (
+				89CEA39824603B53001EDE13 /* SimplePing.h */,
+				89CEA39924603B53001EDE13 /* SimplePing.m */,
+			);
+			path = SimplePing;
+			sourceTree = "<group>";
+		};
+		89CEA39A24603B53001EDE13 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				89CEA39B24603B53001EDE13 /* MMDevice.m */,
+				89CEA39C24603B53001EDE13 /* MMDevice.h */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		89CEA39D24603B53001EDE13 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				89CEA39E24603B53001EDE13 /* data.plist */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,18 +336,12 @@
 		8911CE3B21A356610087991D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1140;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = robot64;
 				TargetAttributes = {
-					2B42DD40245FD38800AFA27C = {
-						CreatedOnToolsVersion = 11.4.1;
-						LastSwiftMigration = 1140;
-						TestTargetID = 8911CE4221A356610087991D;
-					};
 					8911CE4221A356610087991D = {
 						CreatedOnToolsVersion = 10.0;
-						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -383,7 +376,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BBAEA96245FB88A00CD26E0 /* data.plist in Resources */,
+				89CEA3A724603B53001EDE13 /* data.plist in Resources */,
 				8911CE5121A356630087991D /* LaunchScreen.storyboard in Resources */,
 				8911CE4E21A356630087991D /* Assets.xcassets in Resources */,
 			);
@@ -457,24 +450,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B1AC8D82220FFF3009BBBF1 /* LANScanner.swift in Sources */,
-				2BBAEA95245FB88A00CD26E0 /* MMDevice.m in Sources */,
 				8911CE4721A356620087991D /* AppDelegate.swift in Sources */,
-				2BBAEA92245FB88A00CD26E0 /* PingOperation.m in Sources */,
 				2B1AC8D62220FFF3009BBBF1 /* TrySystemInfoLoader.swift in Sources */,
-				2BBAEA8F245FB88A00CD26E0 /* MACOperation.m in Sources */,
+				89CEA3A524603B53001EDE13 /* SimplePing.m in Sources */,
 				89BD140A21A35D5100CE19A9 /* R.generated.swift in Sources */,
+				89CEA3A024603B53001EDE13 /* MACOperation.m in Sources */,
+				89CEA3A624603B53001EDE13 /* MMDevice.m in Sources */,
 				2B1AC8D52220FFF3009BBBF1 /* HTTPURLResponse.swift in Sources */,
 				2B1FA1582225EC2A0030F8F6 /* ScannerTableViewController.swift in Sources */,
-				2BBAEA8E245FB88A00CD26E0 /* MMLANScanner.m in Sources */,
 				2B1AC8DB22210052009BBBF1 /* SystemInfo.swift in Sources */,
 				2B1AC8D72220FFF3009BBBF1 /* DataResponseError.swift in Sources */,
+				89CEA3A324603B53001EDE13 /* PingOperation.m in Sources */,
+				89CEA39F24603B53001EDE13 /* MMLANScanner.m in Sources */,
+				89CEA3A224603B53001EDE13 /* LANProperties.m in Sources */,
+				89CEA3A124603B53001EDE13 /* NetworkCalculator.m in Sources */,
 				2B1AC8D42220FFF3009BBBF1 /* APIRequest.swift in Sources */,
-				2BBAEA94245FB88A00CD26E0 /* SimplePing.m in Sources */,
-				2BBAEA90245FB88A00CD26E0 /* NetworkCalculator.m in Sources */,
-				2BBAEA91245FB88A00CD26E0 /* LANProperties.m in Sources */,
 				2BBAEA98245FC85B00CD26E0 /* TrySystemInfoLoading.swift in Sources */,
 				2B1AC8D92220FFF3009BBBF1 /* URLRequest.swift in Sources */,
-				2BBAEA93245FB88A00CD26E0 /* MacFinder.m in Sources */,
+				89CEA3A424603B53001EDE13 /* MacFinder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,55 +493,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		2B42DD48245FD38800AFA27C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WXMC8MD6TM;
-				INFOPLIST_FILE = TVRemoteControlUnitTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.daian.TVRemoteControlUnitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "TVRemoteControl/Supporting Files/TVRemoteControl-Bridging-Header.h";
-				SWIFT_OBJC_INTERFACE_HEADER_NAME = "TVRemoteControl-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TVRemoteControl.app/TVRemoteControl";
-			};
-			name = Debug;
-		};
-		2B42DD49245FD38800AFA27C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WXMC8MD6TM;
-				INFOPLIST_FILE = TVRemoteControlUnitTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.daian.TVRemoteControlUnitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "TVRemoteControl/Supporting Files/TVRemoteControl-Bridging-Header.h";
-				SWIFT_OBJC_INTERFACE_HEADER_NAME = "TVRemoteControl-Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TVRemoteControl.app/TVRemoteControl";
-			};
-			name = Release;
-		};
 		8911CE5321A356630087991D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89BD140C21A35E8A00CE19A9 /* TVRemoteControl.xcconfig */;
@@ -582,10 +526,9 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -609,6 +552,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -645,10 +589,9 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -665,6 +608,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -673,9 +617,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WXMC8MD6TM;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -688,7 +631,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "TVRemoteControl/Supporting Files/TVRemoteControl-Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -697,9 +639,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WXMC8MD6TM;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -712,8 +653,34 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "TVRemoteControl/Supporting Files/TVRemoteControl-Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		89CEA38024602ED5001EDE13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = TVRemoteControlUnitTests;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+			};
+			name = Debug;
+		};
+		89CEA38124602ED5001EDE13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				PRODUCT_NAME = TVRemoteControlUnitTests;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 			};
 			name = Release;
 		};
@@ -723,8 +690,8 @@
 		2B42DD4A245FD38800AFA27C /* Build configuration list for PBXNativeTarget "TVRemoteControlUnitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2B42DD48245FD38800AFA27C /* Debug */,
-				2B42DD49245FD38800AFA27C /* Release */,
+				89CEA38024602ED5001EDE13 /* Debug */,
+				89CEA38124602ED5001EDE13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
