@@ -29,9 +29,8 @@ xcuserdata/
 timeline.xctimeline
 playground.xcworkspace
 
-## Carthage
-Carthage/Checkouts
-Carthage/Build
+## CocoaPods
+Pods
 
 ## R.generated.swift
 TVRemoteControl/Resources/R.generated.swift
