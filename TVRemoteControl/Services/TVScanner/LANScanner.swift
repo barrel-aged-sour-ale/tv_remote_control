@@ -16,16 +16,14 @@ class LANScanner: NSObject {
 
     private let accessQueue = DispatchQueue(label: "IncreaseTVsCount")
 
-    private var lanScanner: MMLANScanner
+    lazy var lanScanner: MMLANScanner = MMLANScanner(delegate: self)
     private let trySystemInfoLoader: TrySystemInfoLoading
 
-    init(lanScanner: MMLANScanner, trySystemInfoLoader: TrySystemInfoLoading) {
-        self.lanScanner = lanScanner
+    init(trySystemInfoLoader: TrySystemInfoLoading) {
         self.trySystemInfoLoader = trySystemInfoLoader
     }
 
     func startScanForPhillipsTV() {
-        lanScanner.delegate = self
         lanScanner.start()
     }
 
