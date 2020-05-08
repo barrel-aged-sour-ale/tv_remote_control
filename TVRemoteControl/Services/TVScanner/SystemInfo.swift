@@ -1,7 +1,7 @@
 import Foundation
 
-struct SystemInfo: Decodable {
-    private(set) var name: String
+struct SystemInfo: Codable {
+    let name: String
     var ipAddress: String?
 
     enum CodingKeys: String, CodingKey {

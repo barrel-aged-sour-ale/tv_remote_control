@@ -3,19 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B1AC8D42220FFF3009BBBF1 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AC8CD2220FFF2009BBBF1 /* APIRequest.swift */; };
 		2B1AC8D52220FFF3009BBBF1 /* HTTPURLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AC8CE2220FFF2009BBBF1 /* HTTPURLResponse.swift */; };
 		2B1AC8D62220FFF3009BBBF1 /* TrySystemInfoLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AC8CF2220FFF3009BBBF1 /* TrySystemInfoLoader.swift */; };
-		2B1AC8D72220FFF3009BBBF1 /* DataResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AC8D02220FFF3009BBBF1 /* DataResponseError.swift */; };
 		2B1AC8D82220FFF3009BBBF1 /* LANScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AC8D12220FFF3009BBBF1 /* LANScanner.swift */; };
-		2B1AC8D92220FFF3009BBBF1 /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AC8D22220FFF3009BBBF1 /* URLRequest.swift */; };
 		2B1AC8DB22210052009BBBF1 /* SystemInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AC8DA22210052009BBBF1 /* SystemInfo.swift */; };
 		2B1FA1582225EC2A0030F8F6 /* ScannerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1FA1572225EC2A0030F8F6 /* ScannerTableViewController.swift */; };
 		2B42DD4F245FD46E00AFA27C /* LANScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B42DD4E245FD46E00AFA27C /* LANScannerTests.swift */; };
+		2BB53A232463B12800289AF6 /* URLSessionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB53A1A2463B12800289AF6 /* URLSessionEngine.swift */; };
+		2BB53A242463B12800289AF6 /* HTTPRequestDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB53A1B2463B12800289AF6 /* HTTPRequestDispatcher.swift */; };
+		2BB53A252463B12800289AF6 /* APIRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB53A1C2463B12800289AF6 /* APIRouting.swift */; };
+		2BB53A272463B12800289AF6 /* RequestDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB53A1E2463B12800289AF6 /* RequestDispatcher.swift */; };
+		2BB53A2A2463C5C100289AF6 /* SystemInfoEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB53A292463C5C100289AF6 /* SystemInfoEndpoint.swift */; };
+		2BB53A2C2463CBA000289AF6 /* AnyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB53A2B2463CBA000289AF6 /* AnyEncodable.swift */; };
+		2BB53A2E2465094400289AF6 /* URLSessionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB53A2D2465094400289AF6 /* URLSessionError.swift */; };
+		2BB53A30246509AF00289AF6 /* APIRequesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB53A2F246509AF00289AF6 /* APIRequesting.swift */; };
+		2BB53A3224650AA600289AF6 /* NetworkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB53A3124650AA600289AF6 /* NetworkConfiguration.swift */; };
 		2BBAEA98245FC85B00CD26E0 /* TrySystemInfoLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBAEA97245FC85B00CD26E0 /* TrySystemInfoLoading.swift */; };
 		8911CE4721A356620087991D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8911CE4621A356620087991D /* AppDelegate.swift */; };
 		8911CE4E21A356630087991D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8911CE4D21A356630087991D /* Assets.xcassets */; };
@@ -45,17 +51,23 @@
 /* Begin PBXFileReference section */
 		1922112B21AFC39F00C0A68C /* Rswift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rswift.framework; path = Carthage/Build/iOS/Rswift.framework; sourceTree = "<group>"; };
 		2B1AC87E2220FCAA009BBBF1 /* TVRemoteControl-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TVRemoteControl-Bridging-Header.h"; sourceTree = "<group>"; };
-		2B1AC8CD2220FFF2009BBBF1 /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		2B1AC8CE2220FFF2009BBBF1 /* HTTPURLResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPURLResponse.swift; sourceTree = "<group>"; };
 		2B1AC8CF2220FFF3009BBBF1 /* TrySystemInfoLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrySystemInfoLoader.swift; sourceTree = "<group>"; };
-		2B1AC8D02220FFF3009BBBF1 /* DataResponseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataResponseError.swift; sourceTree = "<group>"; };
 		2B1AC8D12220FFF3009BBBF1 /* LANScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LANScanner.swift; sourceTree = "<group>"; };
-		2B1AC8D22220FFF3009BBBF1 /* URLRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
 		2B1AC8DA22210052009BBBF1 /* SystemInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemInfo.swift; sourceTree = "<group>"; };
 		2B1FA1572225EC2A0030F8F6 /* ScannerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerTableViewController.swift; sourceTree = "<group>"; };
 		2B42DD41245FD38800AFA27C /* TVRemoteControlUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVRemoteControlUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B42DD45245FD38800AFA27C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B42DD4E245FD46E00AFA27C /* LANScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LANScannerTests.swift; sourceTree = "<group>"; };
+		2BB53A1A2463B12800289AF6 /* URLSessionEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionEngine.swift; sourceTree = "<group>"; };
+		2BB53A1B2463B12800289AF6 /* HTTPRequestDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequestDispatcher.swift; sourceTree = "<group>"; };
+		2BB53A1C2463B12800289AF6 /* APIRouting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRouting.swift; sourceTree = "<group>"; };
+		2BB53A1E2463B12800289AF6 /* RequestDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestDispatcher.swift; sourceTree = "<group>"; };
+		2BB53A292463C5C100289AF6 /* SystemInfoEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemInfoEndpoint.swift; sourceTree = "<group>"; };
+		2BB53A2B2463CBA000289AF6 /* AnyEncodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyEncodable.swift; sourceTree = "<group>"; };
+		2BB53A2D2465094400289AF6 /* URLSessionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionError.swift; sourceTree = "<group>"; };
+		2BB53A2F246509AF00289AF6 /* APIRequesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequesting.swift; sourceTree = "<group>"; };
+		2BB53A3124650AA600289AF6 /* NetworkConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfiguration.swift; sourceTree = "<group>"; };
 		2BBAEA97245FC85B00CD26E0 /* TrySystemInfoLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrySystemInfoLoading.swift; sourceTree = "<group>"; };
 		8911CE4321A356610087991D /* TVRemoteControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVRemoteControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8911CE4621A356620087991D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -129,10 +141,6 @@
 			children = (
 				2B1AC8DA22210052009BBBF1 /* SystemInfo.swift */,
 				2B1AC8CF2220FFF3009BBBF1 /* TrySystemInfoLoader.swift */,
-				2B1AC8D22220FFF3009BBBF1 /* URLRequest.swift */,
-				2B1AC8CD2220FFF2009BBBF1 /* APIRequest.swift */,
-				2B1AC8D02220FFF3009BBBF1 /* DataResponseError.swift */,
-				2B1AC8CE2220FFF2009BBBF1 /* HTTPURLResponse.swift */,
 				2B1AC8D12220FFF3009BBBF1 /* LANScanner.swift */,
 				2BBAEA97245FC85B00CD26E0 /* TrySystemInfoLoading.swift */,
 			);
@@ -146,6 +154,47 @@
 				2B42DD4E245FD46E00AFA27C /* LANScannerTests.swift */,
 			);
 			path = TVRemoteControlUnitTests;
+			sourceTree = "<group>";
+		};
+		2BB53A142463B12800289AF6 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				2B1AC8CE2220FFF2009BBBF1 /* HTTPURLResponse.swift */,
+				2BB53A3324650EC900289AF6 /* Protocols */,
+				2BB53A282463C5AA00289AF6 /* Endpoints */,
+				2BB53A192463B12800289AF6 /* Engines */,
+				2BB53A2B2463CBA000289AF6 /* AnyEncodable.swift */,
+				2BB53A2D2465094400289AF6 /* URLSessionError.swift */,
+				2BB53A3124650AA600289AF6 /* NetworkConfiguration.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		2BB53A192463B12800289AF6 /* Engines */ = {
+			isa = PBXGroup;
+			children = (
+				2BB53A1A2463B12800289AF6 /* URLSessionEngine.swift */,
+				2BB53A1B2463B12800289AF6 /* HTTPRequestDispatcher.swift */,
+			);
+			path = Engines;
+			sourceTree = "<group>";
+		};
+		2BB53A282463C5AA00289AF6 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				2BB53A292463C5C100289AF6 /* SystemInfoEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		2BB53A3324650EC900289AF6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2BB53A1C2463B12800289AF6 /* APIRouting.swift */,
+				2BB53A1E2463B12800289AF6 /* RequestDispatcher.swift */,
+				2BB53A2F246509AF00289AF6 /* APIRequesting.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		8911CE3A21A356610087991D = {
@@ -171,6 +220,7 @@
 		8911CE4521A356610087991D /* TVRemoteControl */ = {
 			isa = PBXGroup;
 			children = (
+				2BB53A142463B12800289AF6 /* Networking */,
 				89CEA38224603B36001EDE13 /* ThirdParty */,
 				2B1AC87F2220FF7F009BBBF1 /* Services */,
 				89BD140721A35CDA00CE19A9 /* Resources */,
@@ -451,18 +501,24 @@
 				2B1AC8D62220FFF3009BBBF1 /* TrySystemInfoLoader.swift in Sources */,
 				89CEA3A524603B53001EDE13 /* SimplePing.m in Sources */,
 				89CEA3A024603B53001EDE13 /* MACOperation.m in Sources */,
+				2BB53A242463B12800289AF6 /* HTTPRequestDispatcher.swift in Sources */,
 				89CEA3A624603B53001EDE13 /* MMDevice.m in Sources */,
+				2BB53A30246509AF00289AF6 /* APIRequesting.swift in Sources */,
 				2B1AC8D52220FFF3009BBBF1 /* HTTPURLResponse.swift in Sources */,
 				2B1FA1582225EC2A0030F8F6 /* ScannerTableViewController.swift in Sources */,
+				2BB53A2E2465094400289AF6 /* URLSessionError.swift in Sources */,
+				2BB53A232463B12800289AF6 /* URLSessionEngine.swift in Sources */,
+				2BB53A2C2463CBA000289AF6 /* AnyEncodable.swift in Sources */,
 				2B1AC8DB22210052009BBBF1 /* SystemInfo.swift in Sources */,
-				2B1AC8D72220FFF3009BBBF1 /* DataResponseError.swift in Sources */,
+				2BB53A272463B12800289AF6 /* RequestDispatcher.swift in Sources */,
 				89CEA3A324603B53001EDE13 /* PingOperation.m in Sources */,
 				89CEA39F24603B53001EDE13 /* MMLANScanner.m in Sources */,
 				89CEA3A224603B53001EDE13 /* LANProperties.m in Sources */,
+				2BB53A3224650AA600289AF6 /* NetworkConfiguration.swift in Sources */,
+				2BB53A252463B12800289AF6 /* APIRouting.swift in Sources */,
 				89CEA3A124603B53001EDE13 /* NetworkCalculator.m in Sources */,
-				2B1AC8D42220FFF3009BBBF1 /* APIRequest.swift in Sources */,
 				2BBAEA98245FC85B00CD26E0 /* TrySystemInfoLoading.swift in Sources */,
-				2B1AC8D92220FFF3009BBBF1 /* URLRequest.swift in Sources */,
+				2BB53A2A2463C5C100289AF6 /* SystemInfoEndpoint.swift in Sources */,
 				89CEA3A424603B53001EDE13 /* MacFinder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
