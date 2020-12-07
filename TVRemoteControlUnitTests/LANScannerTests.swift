@@ -1,7 +1,7 @@
-// @testable import TVRemoteControl
-// import XCTest
+//@testable import TVRemoteControl
+//import XCTest
 //
-// class LANScannerTests: XCTestCase {
+//class LANScannerTests: XCTestCase {
 //    private var lanScanner: LANScanner!
 //    private var mockTrySystemInfoLoader: MockTrySystemInfoLoader!
 //    private var mockMMLanScanner: MockMMLANScanner!
@@ -71,9 +71,9 @@
 //        lanScanner.lanScanDidFailedToScan()
 //        XCTAssertTrue(mockLanScannerDelegate.isLanScanDidFailedToScanExecuted)
 //    }
-// }
+//}
 //
-// class MockLanScannerDelegate: LANScannerDelegate {
+//class MockLanScannerDelegate: LANScannerDelegate {
 //    var asyncExpectation: XCTestExpectation?
 //
 //    var foundedDevices: [SystemInfo] = []
@@ -101,9 +101,9 @@
 //    func lanScanDidFailedToScan() {
 //        isLanScanDidFailedToScanExecuted = true
 //    }
-// }
+//}
 //
-// class MockTrySystemInfoLoader: TrySystemInfoLoading {
+//class MockTrySystemInfoLoader: TrySystemInfoLoading {
 //    var calledCount = 0
 //    var calledIps: [String] = []
 //
@@ -112,9 +112,9 @@
 //        calledIps.append(ipAddress)
 //        calledCount > 1 ? completion(Result.failure(DataResponseError.network)) : completion(Result.success(SystemInfo(name: "test", ipAddress: ipAddress)))
 //    }
-// }
+//}
 //
-// class MockMMLANScanner: MMLANScanner {
+//class MockMMLANScanner: MMLANScanner {
 //    var isStartExecuted = false
 //    override func start() {
 //        isStartExecuted = true
@@ -124,4 +124,4 @@
 //    override func stop() {
 //        isStopExecuted = true
 //    }
-// }
+//}
