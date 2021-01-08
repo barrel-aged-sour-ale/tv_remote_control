@@ -45,7 +45,7 @@ class LANScanner: NSObject {
                                                       from: self.connectedDevices.count)
                 switch result {
                 case let .failure(error):
-                    print("[API] Failure: error: \(error.reason)")
+                    print("[API] Failure: error: \(error.localizedDescription)")
                 case let .success(response):
                     self.delegate?.lanScanDidFindNewDevice(response)
                     print("[API] Success: response \(response)")
